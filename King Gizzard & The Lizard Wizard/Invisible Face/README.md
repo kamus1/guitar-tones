@@ -9,12 +9,17 @@ mid-forward, rolled-off highs, with modulation and delay underneath.
 
 | # | Device | Parameters |
 |---|---|---|
-| 1 | **Saturator** | Analog Clip - Drive **12 dB** - Output **-7.4 dB** - Dry/Wet 100% |
-| 2 | **Saturator** | Analog Clip - Drive **22 dB** - Output **-7.4 dB** - Dry/Wet 100% |
-| 3 | **EQ Three** | Low **-1.9 dB** - Mid **+6.0 dB** - High **-7.0 dB** - FreqLow **125 Hz** - FreqHi **1.90 kHz** |
-| 4 | **Phaser-Flanger** | **Flanger** mode - Rate 2 Hz - Amount 100% - Feedback 0% - Dry/Wet **32%** |
-| 5 | **Delay** | Synced **3/16** L and R - **Repitch** mode - Feedback 50% - Dry/Wet **15%** |
-| 6 | **Reverb** | Dry/Wet **20%** - Decay 1.20 s |
+| 1 | **Auto Filter** (auto-wah) | Band-pass - SVF - 24 dB - Freq **746 Hz** - Res **43%** - Envelope **56%** - Attack 1.00 ms - Release 250 ms |
+| 2 | **Saturator** | Analog Clip - Drive **12 dB** - Output **-7.4 dB** - Dry/Wet 100% |
+| 3 | **Saturator** | Analog Clip - Drive **22 dB** - Output **-7.4 dB** - Dry/Wet 100% |
+| 4 | **EQ Three** | Low **-1.9 dB** - Mid **+6.0 dB** - High **-7.0 dB** - FreqLow **125 Hz** - FreqHi **1.90 kHz** |
+| 5 | **Phaser-Flanger** | **Flanger** mode - Rate 2 Hz - Amount 100% - Feedback 0% - Dry/Wet **32%** |
+| 6 | **Delay** | Synced **3/16** L and R - **Repitch** mode - Feedback 50% - Dry/Wet **15%** |
+| 7 | **Reverb** | Dry/Wet **20%** - Decay 1.20 s |
+
+The Auto Filter sits first, the same place a wah pedal sits in a real rig
+(before the gain). It is an envelope-follower filter: the sweep is triggered by
+the picking attack, not by an expression pedal.
 
 Two saturation stages in series instead of one very hot stage: the first one
 thickens, the second one dirties. That is how a real preamp + power amp behave.
@@ -58,6 +63,10 @@ Ways to get closer on a standard guitar:
 - Too bright -> lower High, or move FreqHi down toward 1.5 kHz.
 - Too thin -> raise Low toward 0 dB.
 - Lacking body -> raise Drive on Saturator **1** (not 2).
+- Wah too subtle -> raise **Envelope** on the Auto Filter to 70-80%.
+- Wah too nasal or whistling -> keep **Res** below 60%.
+- Wah too high or too low -> move **Freq**, which is the filter's resting point.
+- Automatic sweep instead of attack-driven -> raise **LFO Amt** and set Envelope to 0.
 
 Use the neck or middle pickup. The bridge pickup adds a 2-3 kHz peak that the
 EQ cannot fully tame.
