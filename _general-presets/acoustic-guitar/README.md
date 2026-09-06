@@ -3,7 +3,7 @@
 Set: `acoustic-guitar.als`
 
 A chain that pushes an electric guitar toward an acoustic timbre using only
-stock Live 12 Lite devices.
+stock Live 12 devices.
 
 ## Chain (track 3, in order)
 
@@ -21,8 +21,8 @@ reverb supplies the body and the room.
 
 ## Limitation
 
-This is an imitation built from EQ and effects, not a simulation. Live Lite
-ships with no impulse response loader and no amp simulator. A magnetic pickup
+This is an imitation built from EQ and effects, not a simulation. There is no
+impulse response loader and no amp simulator in this setup. A magnetic pickup
 never captures pick noise, body thump or top resonance, and no processing can
 invent what never entered the signal.
 
