@@ -1,0 +1,17 @@
+# Never commit copyrighted material (reference videos, reference audio,
+# screenshots of sheet music, etc). Only original configurations belong here.
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.aiff
+*.flac
+*.m4a
+
+# Ableton / Windows clutter
+Backup/
+Ableton Project Info/
+Desktop.ini
+Thumbs.db
+*.asd
